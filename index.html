@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Awesome Books</title>
+</head>
+
+<body>
+  <header>
+    <h3>Awesome Books</h3>
+    <nav>
+      <ul>
+        <li><a href="#list">List</a></li>
+        <li><a href="#add">Add New</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+      <p id="datetime"></p>
+    <section id="list">
+      <div id="book-list">
+        <h2>All Awesome Books</h2>
+        <div id="books"></div>
+      </div>
+    </section>
+    <section id="add">
+      <h2 class="add-title">Add a New Book</h2>
+      <form id="add-book-form">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <button type="submit" class="add-btn">Add</button>
+      </form>
+    </section>
+    <section id="contact">
+      <div class="contact-details">
+        <h2 class="contact-info">Contact Information</h2>
+        <h3>Do you have any questions or you just want to say "Hello"<br><br>
+          You can reach out to us!</h3>
+        <ul>
+          <li class="contact-item"><a href="mailto:tipu870@gmail.com">You can get in touch by sending an email here</a></li>
+          <li>Our phone number: +92-300-5536-444</li>
+          <li>Our address: Street Name 22, 3333, City, Country</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Mike. All rights are reserved.</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.28.0/luxon.min.js"></script>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
