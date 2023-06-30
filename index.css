@@ -6,12 +6,25 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: blanchedalmond;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(./img/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0%;
+  background-position: center;
+  z-index: -1;
 }
+
 
 header {
   width: 100%;
@@ -85,7 +98,7 @@ nav ul a:active {
   background-image: url(./img/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0%;
+  background-position: center center;
 }
 
 #book-list {
@@ -166,7 +179,7 @@ button:focus {
 }
 
 .add-btn {
-  margin-left: 15.2rem;
+  margin-left: 19.2rem;
   border: 2px solid black;
 }
 
@@ -220,4 +233,16 @@ footer {
   bottom: 0;
   position: fixed;
   background-color: rgb(223, 120, 120);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 100% auto;
+    background-position: center top;
+  }
+
+  .main {
+    background-size: 100% auto;
+    background-position: center top;
+  }
 }
